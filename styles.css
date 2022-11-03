@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav {
+    background-color: rgb(0, 0, 0);
+    height: 80px;
+    width: 100%;
+}
+ .enlase{
+      position: absolute;
+      padding: 20px 50px;
+ }
+
+ .logo {
+    height: 80px;
+  
+ }
+ nav ul{
+    float: right;
+    margin-right: 20px;
+ }
+ nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+ }
+ nav ul li a {
+    color: white;
+    font-size: 18px;
+    padding:  7px 15px;
+    border-radius: 3px;
+    text-transform:  uppercase;
+ }
+ li a .active, li a:hover{
+    background: rgb(31, 65, 158);
+    transition: 1.5s;
+ }
+
+ .checkbtn{
+    font-size: 30px;
+    color: white;
+    float:right;
+    line-height: 80px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+ }
+ #check{
+    display: none;
+ }
+ .div-bmt{
+    background-color:rgb(31, 65, 158) ;
+    color: white;
+    padding: 15px 10px 10px 18px;
+    font-size: 25px;
+    display: block;
+    background: linear-gradient(#000310, #0f9cee);
+ }
+ .imagen2{
+    height: 35px;
+ }
