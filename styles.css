@@ -8,40 +8,46 @@ section{
     overflow: hidden;
     align-items: center;
     text-align: center;
+   
 }
 
-img{
-    max-width: 40%;
-    width: 363px;
-    height: 231px;
-}
-
-img::before{
-    content: "";
-    position: fixed;
-    z-index: 5;
-    display: block;
-    width: 100%;
+.container1, .container3 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 4rem;
+    padding-left: 20px;
+    padding-right: 20px;
     height: 100%;
+    width: 100%px;
+    justify-content: center;
+    align-items: center;
+    padding: space-between;
 }
-
-a{
+.btn-1, .btn-2, .btn-3{
+    height: 45px;
+    line-height: 45px;
+    width: 30%;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background-color: rgb(155, 179, 251);
+    border-radius: 4px;
     cursor: pointer;
-    text-decoration: none;
-
+    float: left;
+    z-index: 1;  
 }
 
-.btn{
-    display: inline block;
-    letter-spacing: 2px;
-    margin-right: -2px;
+.contenedor-img1{
+    height: 96%;
+    width: 100%;
 }
+.contenedor-img2{
+    height: 96%;
+    width: 100%;
+    }
 
-.cta-btn{
-    font-size: 1.1rem;
-}
-
-.fill{
-    text-transform: uppercase;
-    font-size: 2.2rem;
+.contenedor-img3{
+    padding-top: 30px;
+    height: 90%;
+    width: 72%;
+    padding-left: 150px;
 }
