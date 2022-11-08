@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width" />
+    <title>MarBLUE</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="formstyle.css">
+    <link rel="icon" type="images/svg" href="img/logo1.svg">
+    <!--icono de la pagina-->
+
+</head>
+
+<body>
+    <main>
+        <!---Grupo usuario-->
+        <form class="formulario" id="formulario" action="https://formspree.io/f/xbjbpevp" name="formulario"
+            method="POST" autocomplete="off">
+            <div class="formulario__grupo " id="grupo__usuario ">
+                <label for="usuario" class="formulario__label">Usuario</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="Usuario" id="Usuario" placeholder="Usuario">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario__input-error">El usuario tiene que tener de 4
+                    a 16 digitos y solo puede contener numeros, letras y guion bajo.
+                </p>
+            </div>
+            <!--Grupo Nombre-->
+            <div class="formulario_grupo" id="grupo_Nombre">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <div class="formulario_grupo-input">
+                    <input type="text" class="formulario__input" name="Nombre" id="Nombre" placeholder="Nombre">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario__input-error">El usuario tiene que tener de 4
+                    a 16 digitos y solo puede contener numeros, letras y guion bajo.
+                </p>
+            </div>
+            <!--Grupo Password-->
+            <div class="formulario_grupo" id="grupo_password">
+                <label for="password" class="formulario__label">Contraseña</label>
+                <div class="formulario_grupo-input">
+                    <input type="password" class="formulario__input" name="password" id="password"
+                        placeholder="Password">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario__input-error">la contraseña tiene que ser de 4 a 12 digitos.
+                </p>
+            </div>
+            <!--Grupo confrimar Password-->
+            <div class="formulario_grupo" id="grupo_password2">
+                <label for="password2" class="formulario__label">Confirmar contraseña</label>
+                <div class="formulario_grupo-input">
+                    <input type="password" class="formulario__input" name="password2" id="password2"
+                        placeholder="Password">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario__input-error">la contraseña no coincide
+                </p>
+            </div>
+            <!--Grupo Email-->
+            <div class="formulario_grupo" id="grupo_email">
+                <label for="email" class="formulario__label">Email</label>
+                <div class="formulario_grupo-input">
+                    <input type="text" class="formulario__input" name="email" id="email" placeholder="Email@email.com">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario__input-error">El correo solo puede tener letras, numeros y guiones bajos
+                </p>
+            </div>
+            <!--Grupo terminos y condiciones-->
+            <div class="formulario__grupo" id="grupo__terminos">
+                <label class="formulario__label">
+                    <input classe="formulari__checkbox" type="checkbox" name="terminos" id="terminos">
+                    Acepto los Terminos y condiciones
+                </label>
+            </div>
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fa-solid fa-triangle-exclamation"></i><b>Erorr</b></p>
+            </div>
+            <div>
+            <button type="submit" class="formulario__btn" value="Enviar">Enviar</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Se envió Existosamente</p>
+            </div>
+        </form>
+    </main>
+    <script src="formulario.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/66c4e5c81a.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/popap.js" type="text/javascript"></script>
+</body>
+
+</html>
