@@ -235,12 +235,13 @@ section {
 .p4 {
   font-size: 20px;
   padding-top: 15px;
-  text-align: justify center;
+  text-align: center;
 }
 
 .título {
   font-size: 35px;
-  padding-top: 20px;
+  padding-top:20px;
+  padding-bottom: 20px;
 }
 
 /*parte de js marjory*/
@@ -446,4 +447,9 @@ section {
 
   }
 
+  #tiburon{
+    height: 100%;
+    width: 100%;
+align-items: center;
+  }
 }
