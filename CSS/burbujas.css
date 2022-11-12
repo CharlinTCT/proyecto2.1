@@ -1,0 +1,118 @@
+/*las olitas de mar*/
+
+.container_all{
+    position: relative;
+    right: 0;
+    transition: all 300ms;
+}
+header{
+    width: 100%;
+    height: 100px;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    transition: all 300ms;
+}
+.move_content{
+    right: 180px;
+}
+
+.select{
+    background: #359EF9;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 20px;
+}
+
+/*animacion burbujas*/
+
+.burbujas div{
+    background: rgb(41, 135, 163);
+    border-radius: 100%;
+    position: absolute;
+    bottom: 0;
+    animation: animarburbujas 4s linear infinite;
+  
+    box-shadow: inset 0 0 10px rgba(24, 38, 230, 0.7);
+  }
+  
+  .burbujas div:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.25) translate(-70%, -70%);
+    background: radial-gradient(#fff,transparent);
+    border-radius: 50%;
+  }
+  
+  .burbujas div:nth-child(1){
+    width: 39px;
+    height: 39px;
+    left: 10px;
+    animation-duration: 5s;
+  }
+  
+  .burbujas div:nth-child(2){
+    width: 23px;
+    height: 23px;
+    left: 92%;
+    animation-duration: 10s
+  }
+  
+  .burbujas div:nth-child(3){
+    width: 12px;
+    height: 12px;
+    left: 97%;
+    animation-duration: 7s;
+  }
+  
+  .burbujas div:nth-child(4){
+    width: 53px;
+    height: 53px;
+    left: 93%;
+    animation-duration: 12s;
+  }
+  
+  .burbujas div:nth-child(5){
+    width: 37px;
+    height: 37px;
+    left: 12%;
+    animation-duration: 16s
+  }
+  
+  .burbujas div:nth-child(6){
+    width: 27px;
+    height: 27px;
+    left: 87%;
+    animation-duration: 4s;
+  }
+  
+  .burbujas div:nth-child(7){
+    width: 42px;
+    height: 42px;
+    left: 8%;
+    animation-duration: 9s;
+  }
+  
+  @keyframes animarburbujas{
+    0%{
+        width: 0;
+        height: 0;
+    }
+    3%{
+        width: 30px;
+        height: 30px;
+    }
+    50%{
+        margin-left: 45px;
+        opacity: 0.5;
+    }
+    100%{
+        transform: rotate(90deg);
+        bottom: 150vh;
+        background: rgb(123, 210, 221);
+    }
+  }
