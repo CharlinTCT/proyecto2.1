@@ -112,7 +112,7 @@ header{
     }
     100%{
         transform: rotate(90deg);
-        bottom: 150vh;
+        bottom: 165vh;
         background: rgb(123, 210, 221);
     }
   }

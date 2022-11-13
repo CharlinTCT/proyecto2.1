@@ -6,10 +6,13 @@
    box-sizing: border-box;
 }
 
-body {
+body{
+   min-height: 100vh;
    font-family: sans-serif;
-   padding: 90px 20px 0;
-   overflow-x: hidden;
+
+   display: flex;
+   align-items: center;
+   
 }
 
 .header {
@@ -19,4 +22,128 @@ body {
    width: 100%;
    top: 0;
    left: 0;
+}
+
+h1{
+   color: white;
+   text-align: center;
+   justify-content: center;
+   margin-top: 1.2rem;
+}
+
+.txt{
+   padding: 90px 20px 0;
+   text-align: center;
+   font-size: 15px;
+   font-family: sans-serif;
+}
+
+h2{
+   margin-left: 20px;
+   text-align: left;
+}
+
+.txt1{
+
+   margin-left: 20px;
+   margin-right: 20px;
+}
+
+:root{
+   --ripple: #619aee;
+}
+
+.effect{
+   position: absolute;
+   width: 100vw;
+   height: 100vh;
+   overflow-x: hidden;
+}
+
+.effect span{
+   position: absolute;
+   box-shadow: 0 0 4px var(--ripple),
+               inset 0 0 4px var(--ripple);
+   animation: ripple 5s linear;
+   border-radius: 50%;
+   transform: translate(-50%, -50%);
+}
+
+@keyframes ripple{
+   0%{
+       width: 0;
+       height: 0;
+   }
+
+   90%{
+       width: 350px;
+       height: 350px;
+   }
+   100%{
+       opacity: 0;
+   }
+}
+
+.video-principal video{
+   margin-top: 30px;
+   margin-left: 25px;
+   width: 70%;
+   border-radius: 1rem;
+}
+
+.titulo{
+   margin-top: 1rem;
+   margin-left: 2rem;
+}
+
+.video-tuto .videos::-webkit-scrollbar {
+   width: .4rem;
+   border-radius: .4rem;
+   background-color: #0005;
+}
+
+
+.video-tuto .videos .video {
+   position: relative;
+   width: 100%;
+   height: 4rem;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   
+   cursor: pointer;
+
+   border-radius: .5rem;
+}
+
+.video-tuto .videos .video:hover{
+   background-color: #619aee;
+}
+
+.video-tuto .videos .video.active{
+   background-color: #b3c9f6;
+   color: #000;
+}
+
+.main{
+   width: 100vw;
+
+   display: grid;
+   grid-template-columns: 1.8fr 1.2fr;
+   gap: 1rem;
+   
+   padding: .5rem 1rem;
+   text-transform: capitalize;
+}
+
+.video h3 {
+   width: 23rem;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+
+   font: 100 1rem sans-serif;
+   padding: 0 .5rem;
 }
