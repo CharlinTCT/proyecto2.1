@@ -1,3 +1,10 @@
+
+/*letras*/
+
+
+
+/*hasta aqui las letras*/
+
 .container_all{
     position: relative;
     right: 0;
@@ -117,12 +124,23 @@
 /*animacion burbujas*/
 
 .burbujas div{
-    background: rgb(26, 102, 126);
-    border-radius: 100%;
-    position: absolute;
-    bottom: 0;
-    animation: animarburbujas 4s linear infinite;
-  }
+  background: rgb(41, 135, 163);
+  border-radius: 100%;
+  position: absolute;
+  bottom: 0;
+  animation: animarburbujas 4s linear infinite;
+
+  box-shadow: inset 0 0 10px rgba(24, 38, 230, 0.7);
+}
+.burbujas div:before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.25) translate(-70%, -70%);
+  background: radial-gradient(#fff,transparent);
+  border-radius: 50%;
+}
   
   .burbujas div:nth-child(1){
     width: 39px;
@@ -188,7 +206,44 @@
     }
     100%{
         transform: rotate(90deg);
-        bottom: 100vh;
+        bottom: 167vh;
         background: rgb(107, 230, 247);
     }
+  }
+
+  /*contenido*/
+  .grid-container {
+    display: grid;
+    grid: 1fr;
+    grid-gap: 10px;
+
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .cartaimg1{
+    height: 50%;
+    width: 50%;
+    align-items: center;
+  }
+  .carta_p{
+    padding: 10px;
+    text-align: left;
+    text-align: center;
+    color: #000000;
+  }
+  .contenido_carta{
+    align-items: lef;
+  }
+  .lista-de-ventajas{
+    padding: 10px;
+    font-size: 25px;
+    color: #000000;
+text-align: center;
   }
