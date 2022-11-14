@@ -19,6 +19,7 @@ body {
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 /*togle class*/
@@ -27,7 +28,6 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-
   max-width: 992px;
   margin: 0 auto;
 }
@@ -41,6 +41,7 @@ nav {
   display: flex;
   margin-right: 40px;
   list-style: none;
+  
 }
 
 .nav-menu-item {
@@ -119,7 +120,14 @@ nav {
 
 /*esta es la parte de char de aqui hacia arriba*/
 
-
+/*boton necesitas ayuda con tu pagina web*/
+.button-help{
+  color: white;
+  background-color: #389efe;
+  height: 40px;
+  width: 300px;
+  border-radius: 30px;
+}
 
 /*Pie de Pagina*/
 .pie-pagina {
@@ -452,4 +460,7 @@ section {
     width: 100%;
 align-items: center;
   }
+}
+h1{
+  font-size: 40px;
 }
