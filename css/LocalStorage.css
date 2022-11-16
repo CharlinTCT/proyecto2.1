@@ -1,0 +1,47 @@
+body{/*aqui llamamos a todo el contenido body*/
+  background-color: #30a4f1c8;
+  
+  
+  
+}
+header, .alert{/*etiqueta y clase*/
+  z-index: 100;/*es de 100px*/
+}
+.description{/*clase*/
+  height: 25px;/*va a tener una altura*/
+  overflow: hidden;/**/
+  transition: height .3s ease-in .3s;/*va a tener una transicion de*/
+  
+}
+.description:hover{/*aqui el efecto hover */
+  height: 80px;/*que tenga un efceto de altura*/
+
+}
+.carrito{/*clase carrito*/
+  min-height: 80vh;/*minumo del altura, vista de altura (vh)*/
+  max-width: 1000px;/*max ancho*/
+  margin: 0 auto;/*margenes laterales */
+  width: 100%;/*ancho de 100porciento*/
+}
+.table__productos{/*los contenedores*/
+  display: flex;/*display flex para que sea flexible a los cambios */
+}
+.table__productos > img{/*aqui llammaos al contenedor de los productos pero tambien con las imagenes. que me sobreponga la tabla de productos sobre la imagen*/
+  width: 9rem;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+.table__cantidad > input{/*aqui muestra los datos de ingreso*/
+  width: 40px;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+.hide, .remove{
+  display: none;
+}
+
