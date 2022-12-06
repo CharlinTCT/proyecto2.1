@@ -19,6 +19,7 @@ body {
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 /*togle class*/
@@ -27,7 +28,6 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-
   max-width: 992px;
   margin: 0 auto;
 }
@@ -41,6 +41,7 @@ nav {
   display: flex;
   margin-right: 40px;
   list-style: none;
+  
 }
 
 .nav-menu-item {
@@ -119,7 +120,14 @@ nav {
 
 /*esta es la parte de char de aqui hacia arriba*/
 
-
+/*boton necesitas ayuda con tu pagina web*/
+.button-help{
+  color: white;
+  background-color: #389efe;
+  height: 40px;
+  width: 300px;
+  border-radius: 30px;
+}
 
 /*Pie de Pagina*/
 .pie-pagina {
@@ -196,89 +204,14 @@ nav {
 
 /*parte de dany*/
 section {
+  padding: 4.4rem;
   overflow: hidden;
   align-items: center;
   text-align: center;
+
 }
 
-.burbujas div{
-  background: rgb(26, 102, 126);
-  border-radius: 100%;
-  position: absolute;
-  bottom: 0;
-  animation: animarburbujas 4s linear infinite;
-}
-
-.burbujas div:nth-child(1){
-  width: 39px;
-  height: 39px;
-  left: 10px;
-  animation-duration: 5s;
-}
-
-.burbujas div:nth-child(2){
-  width: 23px;
-  height: 23px;
-  left: 92%;
-  animation-duration: 10s
-}
-
-.burbujas div:nth-child(3){
-  width: 12px;
-  height: 12px;
-  left: 97%;
-  animation-duration: 7s;
-}
-
-.burbujas div:nth-child(4){
-  width: 53px;
-  height: 53px;
-  left: 93%;
-  animation-duration: 12s;
-}
-
-.burbujas div:nth-child(5){
-  width: 37px;
-  height: 37px;
-  left: 12%;
-  animation-duration: 16s
-}
-
-.burbujas div:nth-child(6){
-  width: 27px;
-  height: 27px;
-  left: 87%;
-  animation-duration: 4s;
-}
-
-.burbujas div:nth-child(7){
-  width: 42px;
-  height: 42px;
-  left: 8%;
-  animation-duration: 9s;
-}
-
-@keyframes animarburbujas{
-  0%{
-      width: 0;
-      height: 0;
-  }
-  3%{
-      width: 30px;
-      height: 30px;
-  }
-  50%{
-      margin-left: 45px;
-      opacity: 0.5;
-  }
-  100%{
-      transform: rotate(90deg);
-      bottom: 100vh;
-      background: rgb(107, 230, 247);
-  }
-}
-
-.container1 .container2 {
+.container1 .container3 {
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 4rem;
@@ -527,4 +460,7 @@ section {
     width: 100%;
 align-items: center;
   }
+}
+h1{
+  font-size: 40px;
 }
