@@ -1,146 +1,52 @@
-
-/*letras*/
-
-
-
-/*hasta aqui las letras*/
+/*las olitas de mar*/
 
 .container_all{
     position: relative;
     right: 0;
     transition: all 300ms;
 }
-/*COVER*/
-
-.cover{
+header{
     width: 100%;
-    padding-bottom: 120px;
+    height: 100px;
     font-family: 'Poppins', sans-serif;
-    padding-top: 100px;
-    position: relative;
-    overflow: hidden;
-}
-
-/*WAVE INICIO*/
-
-.bg_color{
-    width: 100%;
-    height: 70%;
-    background: #2196f3;
-    position: absolute;
+    position: fixed;
     top: 0;
-}
-
-.wave{
-    width: 6000px;
-    height: 100%;
-    position: absolute;
-    top: 150px;
-    left: 0;
-    background-image: url(/img/wd1.svg);
-    background-position: bottom;
-}
-
-.w1{
-    animation: w1 7s linear infinite;
-}
-
-.w2{
-    animation: w2 7s linear -.125s infinite, desplazamiento 7s ease -.125s infinite;
-    opacity: 0.5;
-}
-@keyframes w1 {
-    0%{
-        margin-left: 0;
-    }
-    100%{
-        margin-left: -1600px;
-    }
-}
-@keyframes w2 {
-    0%{
-        margin-left: 0;
-    }
-    100%{
-        margin-left: -1600px;
-    }
-}
-@keyframes desplazamiento {
-    0%, 100%{
-        transform: translateY(-25px);
-    }
-
-    50%{
-        transform: translateY(10px);
-    }
-}
- /*WAVE FINAL*/
-
- .container__cover{
-    max-width: 1200px;
-    margin: 100;
-    padding: 100px;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    *background-image: url(/img/background-cover.svg);
-    background-size: cover;
-    background-position: bottom;
-    
-}
-.cover .container__info{
-    max-width: 400px;
-    margin-top: 40px;
-}
-.cover h1{
-    max-width: 400px;
-    font-size: 55px;
-    font-weight: 800;
-    color: #fff;
-}
-
-.cover h2{
-    font-size: 50px;
-    font-weight: 900;
-    color: #000000;
-    margin-top: -30px;
-}
-
-.cover p{
-    margin-top: 10px;
-    color: #fff;
-}
-.container__vector{
-    position: relative;
-}
-.container__vector img{
-    position: absolute;
-    bottom: 10px;
-    right: 0px;
-    width: 600px;
+    right: 0;
+    z-index: 100;
     transition: all 300ms;
-    animation: move_vector 6s ease-in-out infinite;
 }
+.move_content{
+    right: 180px;
+}
+
+.select{
+    background: #359EF9;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 20px;
+}
+
 /*animacion burbujas*/
 
 .burbujas div{
-  background: rgb(41, 135, 163);
-  border-radius: 100%;
-  position: absolute;
-  bottom: 0;
-  animation: animarburbujas 4s linear infinite;
-
-  box-shadow: inset 0 0 10px rgba(24, 38, 230, 0.7);
-}
-.burbujas div:before{
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform: scale(0.25) translate(-70%, -70%);
-  background: radial-gradient(#fff,transparent);
-  border-radius: 50%;
-}
+    background: rgb(41, 135, 163);
+    border-radius: 100%;
+    position: absolute;
+    bottom: 0;
+    animation: animarburbujas 4s linear infinite;
+  
+    box-shadow: inset 0 0 10px rgba(24, 38, 230, 0.7);
+  }
+  
+  .burbujas div:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.25) translate(-70%, -70%);
+    background: radial-gradient(#fff,transparent);
+    border-radius: 50%;
+  }
   
   .burbujas div:nth-child(1){
     width: 39px;
@@ -206,44 +112,7 @@
     }
     100%{
         transform: rotate(90deg);
-        bottom: 167vh;
-        background: rgb(107, 230, 247);
+        bottom: 165vh;
+        background: rgb(123, 210, 221);
     }
-  }
-
-  /*contenido*/
-  .grid-container {
-    display: grid;
-    grid: 1fr;
-    grid-gap: 10px;
-
-    padding: 10px;
-  }
-  
-  .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-  }
-
-  .cartaimg1{
-    height: 50%;
-    width: 50%;
-    align-items: center;
-  }
-  .carta_p{
-    padding: 10px;
-    text-align: left;
-    text-align: center;
-    color: #000000;
-  }
-  .contenido_carta{
-    align-items: lef;
-  }
-  .lista-de-ventajas{
-    padding: 10px;
-    font-size: 25px;
-    color: #000000;
-text-align: center;
   }
