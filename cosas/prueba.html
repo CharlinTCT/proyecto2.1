@@ -1,0 +1,23 @@
+<form class=""name="formulario"id="formulario"  method="post" action="prueba.html">
+    <select id="producto" name="producto" onchange="ShowSelected();">
+      <option value="12">*1 Cuenta de correo corporativo</option>
+      <option value="13">Texto Two</option>
+    </select>
+    <input name="name" type="text">
+    <input name="value" type="text">
+    <input type="button" value="button" onclick="ShowSelected()">
+  </form>
+  
+  <script type="text/javascript">
+    function ShowSelected() {
+      var cod = document.getElementById("producto").value;
+      var combo = document.getElementById("producto");
+      var selected = combo.options[combo.selectedIndex].text;
+  
+      document.formulario.name.value = selected;
+      document.formulario.value.value = cod;
+    }
+  </script>
+    
+       
+        

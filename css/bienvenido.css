@@ -1,0 +1,91 @@
+body {
+    background-color: rgba(225, 239, 243, 0.671);
+}
+
+.header {
+    width:  100%;
+    max-width: 800px;
+    padding: 40px;
+    margin: auto;
+    margin-top: 100px;
+    background: rgb(140, 207, 255);
+    border-radius: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+.logo-welcome {
+    width: 100px;
+    margin: 1%;
+    margin-top: 1%;
+}
+
+.title-welcome {
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 20px;
+    color: rgb(13, 12, 12);
+}
+
+.close-sesion {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    display: block;
+    padding: 20px;
+    margin-top: 40px;
+    background: rgba(4, 30, 133, 0.857);
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.close-sesion:hover{
+   background: rgb(140, 207, 255); 
+}
+
+label{
+    text-align: left;
+}
+
+#form_nombre{
+    height: 15px;
+    width: 150px;
+    text-align: left;
+}
+
+#form_fechacrea{
+    width: 153px;
+    text-align: left;
+}
+
+#form_fechaentrega{
+    width: 153px;
+    justify-content: left;
+}
+
+#form_presupuesto{
+    width: 158px;
+}
+
+#form_extras{
+    width: 150px;
+    justify-content: left;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 500px){
+    .title-welcome {
+        font-weight: 400;
+        font-size: 30px;
+        margin-top: 20px;
+        color: white;
+    }
+}
